@@ -16,3 +16,9 @@ The price of a single share changes throughout the business hours of the stock e
 
 There are many economic metrics used to measure the value of a security. There are *momentum* indicators, which measure if the price of a share is rising, falling, how quickly, and for how long. There are *value* metrics, which compare the *actual* price of a security with a mathematical calculation of what the price *should* be. This calculation varies for every analyst, though some common metrics take into account a companiy's revenue, profit, cash flow, liabilities, etc.
 
+## Goal
+
+---
+
+The goal of this project is to create an algorithm that increases the profit realized by investors. 
+

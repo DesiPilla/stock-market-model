@@ -22,3 +22,18 @@ There are many economic metrics used to measure the value of a security. There a
 
 The goal of this project is to create an algorithm that increases the profit realized by investors. 
 
+## Methods
+
+---
+
+This goal will be acheived by using two models, a *Logistic Regression* and *Neural Network*.
+
+The data was scraped from the internet for individual stocks. This includes daily price and trading data, as well as earnings data for every quarter since 1995.
+
+The scraped data was manipulated to calculate a variety of value- and momentum-based metrics.
+
+For each trial, a testing date is given. The training data includes a 1 or 2 year period (chosen as a hyperparamter of the model) occurring at least *n* days before the testing date. The test data is comprised of the 6 month period following the testing date.
+
+*N* corresponds the the classifcation of an instance. This data has a binary classification defined by whether or not the price of the security increased *n* business days after the current date. It is for this reason that there must be a gap of *n* days between the training and test data. This value is also selected as a hyperparameter of the model. Predicting the price of a stock 1 day into the future (which would practically yield the highest returns), is nearly impossible. It is unrealistic to do so given the feature spaced used in this project, as no geopolitical or media information was gleaned.
+
+*Note: This model does not take dividend payouts into account, and all stock prices are split-adjusted.

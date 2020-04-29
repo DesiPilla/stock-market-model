@@ -78,3 +78,7 @@ The above chart shows that the model was able to successfully outperform the une
 The logistic regression proved to be the more lucrative investing technique for 5/8 holdings, with an average return of 0.72% /yr greater than the static return.
 
 The neural network proved to be the more lucrative investing technique for 7/8 holdings, with an average return of 1.57% /yr greater than the static return. Among the 7 stocks in which the model performed better, the average return was 3.02% /yr greater than the static return.
+
+## Recommendations
+
+While the model appears to have performed well, I would not recommend using this to guide any investment decisions. The use of averaging over many years and multiple economic cycles is naiive, expecially considering the lack of information used in the decision making process of these models. This model can serve as a guide, but it should not be used to pick which securities to buy. **The purpose of this model is to maximize the returns of a holding, not to give input on which stocks will outperform others.**

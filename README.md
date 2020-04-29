@@ -52,3 +52,19 @@ The performance of this model will not be measured by the accuracy of its predic
 
 *Note: Other measures of success could have also been selected. For example, one could have optimized the model to reduce volatility or minimize losses. This project, however, optimizes the model by maximizing returns without regard for volaility or short-term losses.*
 
+# Evaluation
+
+Below are the annualized returns of each model for the tested companies:
+
+|Stock                   |Static Return|Logistic Regression|Neural Network|
+|-----------------------:|------------:|------------------:|-------------:|
+|Amazon.com, Inc.        |30.55%       |**31.51%**         |21.95%        |
+|DuPont de Nemours, Inc. |3.69%        |**5.66%**          |**7.93%**     |
+|Exxon Mobil Corporation |7.46%        |**11.74%**         |**13.47%**    |
+|IBM Corporation         |4.80%        |**7.66%**          |**8.31%**     |
+|Johnson & Johnson       |5.90%        |3.70%              |**7.25%**     |
+|J.P. Morgan Chase & Co. |6.84%        |1.95%              |**8.92%**     |
+|Microsoft Corporation   |4.89%        |**7.79%**          |**6.55%**     |
+|Walt Disney Co          |13.83%       |13.68%             |**16.11%**    |
+
+*Bolded returns reflect annualized returns that were greater than the unengaged investor*

@@ -54,6 +54,8 @@ The performance of this model will not be measured by the accuracy of its predic
 
 # Evaluation
 
+## Results
+
 Below are the annualized returns of each model for the tested companies:
 
 |Stock                   |Static Return|Logistic Regression|Neural Network|
@@ -68,3 +70,11 @@ Below are the annualized returns of each model for the tested companies:
 |Walt Disney Co          |13.83%       |13.68%             |**16.11%**    |
 
 *Bolded returns reflect annualized returns that were greater than the unengaged investor*
+
+## Conclusions
+
+The above chart shows that the model was able to successfully outperform the unengaged investor for all 8 securities tested. Companies were chosen from a broad range of sectors to test the robustness of the model.
+
+The logistic regression proved to be the more lucrative investing technique for 5/8 holdings, with an average return of 0.72% /yr greater than the static return.
+
+The neural network proved to be the more lucrative investing technique for 7/8 holdings, with an average return of 1.57% /yr greater than the static return. Among the 7 stocks in which the model performed better, the average return was 3.02% /yr greater than the static return.

@@ -1,0 +1,2 @@
+# stock-market-model
+ The goal of this project is to create an algorithm that increases the profit realized by investors. This goal will be acheived by using two models, a Logistic Regression and Neural Network. The data was scraped from the internet for individual stocks. This includes daily price and trading data, as well as earnings data for every quarter since 1995. The scraped data was manipulated to calculate a variety of value- and momentum-based metrics.

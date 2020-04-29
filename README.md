@@ -37,3 +37,18 @@ For each trial, a testing date is given. The training data includes a 1 or 2 yea
 *N* corresponds the the classifcation of an instance. This data has a binary classification defined by whether or not the price of the security increased *n* business days after the current date. It is for this reason that there must be a gap of *n* days between the training and test data. This value is also selected as a hyperparameter of the model. Predicting the price of a stock 1 day into the future (which would practically yield the highest returns), is nearly impossible. It is unrealistic to do so given the feature spaced used in this project, as no geopolitical or media information was gleaned.
 
 *Note: This model does not take dividend payouts into account, and all stock prices are split-adjusted.
+
+## Performance
+
+---
+
+Economic climates can vary by month, quarter, and year. To gain a more accurate understanding of a model's performance, every 6 month period was tested from the period beginning on January 1st, 2003 to the period beginning on January 1st, 2016 (which ends on July 1st, 2016). The total returns of the model are then aggregated and compared with the total returns of the *unengaged investor*.
+
+The *unengaged investor* is a control group to compare the model against. Many analysts try to predict the market, and end up making less money than they would have if they didn't do anything. The *unengaged investor* mimics the returns that would be realized if a stock was bought on the first day of a period and kept untili the final day of the period (also referred to at the *static return*). The model buys and sells a security each day depending on the predicted classification of the test data. 
+
+When an instance is classified as True (meaning the model expects the share price to increase in the future), the model buys a share of the stock. It then holds the stock until it classifies an instance as False (meaning the model expects the share price to decrease in the future). The maximum returns would be realized if the model were to buy a security the day before it increases, and sell it the day before it decreases, for every day in the test period. The inverse is also possible, which would be the worst case.
+
+The performance of this model will not be measured by the accuracy of its predictions. Rather, the most practical measurement of this model are to compare its returns to the *unengaged investor*. If the model produces higher returns than an investor who did not use the model and merely held a security for the duration of the period, than utilizing the model to guide investment decisions will have been worthwhile.
+
+*Note: Other measures of success could have also been selected. For example, one could have optimized the model to reduce volatility or minimize losses. This project, however, optimizes the model by maximizing returns without regard for volaility or short-term losses.*
+
